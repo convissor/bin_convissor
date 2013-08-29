@@ -1,4 +1,5 @@
-= Daniel Convissor's Shell Scripts =
+Daniel Convissor's Shell Scripts
+================================
 
 * chmodd -- chmod all directories and sub-directories in the given path
 * chmodd1 -- chmod all directories in the given path
