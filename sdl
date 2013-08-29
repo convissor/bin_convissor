@@ -1,0 +1,12 @@
+#! /bin/bash
+
+if [[ $1 == "-h" || $1 == "--help" ]] ; then
+	echo "Usage:  sdl [arguments] [paths]"
+	echo ""
+	echo "An alias for 'svn diff -x -p | less'"
+	echo ""
+	echo "Author: Daniel Convissor <danielc@analysisandsolutions.com>"
+	exit 1
+fi
+
+svn diff -x -p "$@" | less

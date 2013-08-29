@@ -1,0 +1,12 @@
+#! /bin/bash
+
+if [[ $1 == "-h" || $1 == "--help" ]] ; then
+	echo "Usage:  vss [arguments] [paths]"
+	echo ""
+	echo "Opens all modified files in the current SVN repository."
+	echo ""
+	echo "Author: Daniel Convissor <danielc@analysisandsolutions.com>"
+	exit 1
+fi
+
+vim -p $(svn status "$@" | grep -vE '^D' | awk '{print $2}')

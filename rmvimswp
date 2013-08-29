@@ -1,0 +1,12 @@
+#! /bin/bash
+
+if [[ $1 == "-h" || $1 == "--help" ]] ; then
+	echo "Usage:  rvs"
+	echo ""
+	echo "Removes Vim swap files in the current directory and sub-directories."
+	echo ""
+	echo "Author: Daniel Convissor <danielc@analysisandsolutions.com>"
+	exit 1
+fi
+
+find . -name \*.swp -exec rm {} \;

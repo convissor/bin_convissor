@@ -1,0 +1,15 @@
+#! /bin/bash
+
+if [ -z $2 ] ; then
+	echo "Usage: chmodf1 <mode> <path>"
+	echo ""
+	echo "Allocates the given permissions mode to all files found"
+	echo "in the given directory."
+	echo ""
+	echo "For more info on modes, see man chmod"
+	echo ""
+	echo "Author: Daniel Convissor <danielc@analysisandsolutions.com>"
+	exit 1
+fi
+
+find $2 -maxdepth 1 -type f -exec chmod $1 {} \;

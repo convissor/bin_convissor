@@ -1,0 +1,13 @@
+#! /bin/bash
+
+if [[ -z $1 || $1 == "-h" || $1 == "--help" ]] ; then
+	echo "Usage:  datetoepoch <date string>"
+	echo ""
+	echo "Converts a date string to a UNIX timestamp."
+	echo "The easiest input format is:  YYYY-MM-DD HH:MM:SS"
+	echo ""
+	echo "Author: Daniel Convissor <danielc@analysisandsolutions.com>"
+	exit 1
+fi
+
+date -u -d "$1" +%s

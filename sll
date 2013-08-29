@@ -1,0 +1,12 @@
+#! /bin/bash
+
+if [[ $1 == "-h" || $1 == "--help" ]] ; then
+	echo "Usage:  sll [arguments] [paths]"
+	echo ""
+	echo "An alias for 'svn log | less'"
+	echo ""
+	echo "Author: Daniel Convissor <danielc@analysisandsolutions.com>"
+	exit 1
+fi
+
+svn log "$@" | less

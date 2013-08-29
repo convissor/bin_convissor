@@ -1,0 +1,12 @@
+#! /bin/bash
+
+if [[ $1 == "-h" || $1 == "--help" ]] ; then
+	echo "Usage:  glo [arguments] [paths]"
+	echo ""
+	echo "Produces nicely formatted output from 'git log'."
+	echo ""
+	echo "Author: Daniel Convissor <danielc@analysisandsolutions.com>"
+	exit 1
+fi
+
+git log --pretty=oneline --abbrev-commit "$@"

@@ -1,0 +1,12 @@
+#! /bin/bash
+
+if [[ -z $1 || $1 == "-h" || $1 == "--help" ]] ; then
+	echo "Usage:  epochtodate <seconds since epoch>"
+	echo ""
+	echo "Converts a UNIX timestamp to a date string."
+	echo ""
+	echo "Author: Daniel Convissor <danielc@analysisandsolutions.com>"
+	exit 1
+fi
+
+date -u -d@"$1"

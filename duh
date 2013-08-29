@@ -1,0 +1,12 @@
+#! /bin/bash
+
+if [[ $1 == "-h" || $1 == "--help" ]] ; then
+	echo "Usage:  duh [arguments] [paths]"
+	echo ""
+	echo "Disk Usage Human is an alias for 'du -h -max-depth=1'"
+	echo ""
+	echo "Author: Daniel Convissor <danielc@analysisandsolutions.com>"
+	exit 1
+fi
+
+du -h --max-depth=1 "$@"
