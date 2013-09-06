@@ -9,4 +9,4 @@ if [[ $1 == "-h" || $1 == "--help" ]] ; then
 	exit 1
 fi
 
-vim -p $(svn status "$@" | grep -E '^[AM]' | awk '{print $NF}')
+vim -p $(svn status "$@" | grep -E '^[AM?]' | awk '{print $NF}')
