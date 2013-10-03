@@ -10,6 +10,7 @@ Daniel Convissor's Shell Scripts
 * epochtodate -- converts a UNIX timestamp to a date string
 * glo -- Git Log Oneline
 * gpw -- Generate PassWord
+* phplss -- PHP Lint Svn Status
 * rmvimswp -- Remove Vim Swap files
 * sdl -- Svn Diff Less
 * sll -- Svn Log Less
