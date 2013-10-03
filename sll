@@ -1,7 +1,7 @@
 #! /bin/bash
 
 if [[ $1 == "-h" || $1 == "--help" ]] ; then
-	echo "Usage:  sll [arguments] [paths]"
+	echo "Usage:  sll [svn log arguments] [svn log paths]"
 	echo ""
 	echo "An alias for 'svn log | less'"
 	echo ""

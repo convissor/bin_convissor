@@ -1,9 +1,9 @@
 #! /bin/bash
 
 if [[ $1 == "-h" || $1 == "--help" ]] ; then
-	echo "Usage:  vgs [arguments] [paths]"
+	echo "Usage:  vgs [git status arguments] [git status paths]"
 	echo ""
-	echo "Opens all modified files in the current Git repository."
+	echo "Has Vim open all modified files in the current Git repository."
 	echo ""
 	echo "Author: Daniel Convissor <danielc@analysisandsolutions.com>"
 	exit 1
