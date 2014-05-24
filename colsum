@@ -1,0 +1,18 @@
+#! /bin/bash
+
+if [[ -z $1 || $1 == "-h" || $1 == "--help" ]] ; then
+	echo "Usage:  colsum <file> [<column number, default 1>]"
+	echo ""
+	echo "Adds up a column of numbers in a file"
+	echo ""
+	echo "Author: Daniel Convissor <danielc@analysisandsolutions.com>"
+	exit 1
+fi
+
+if [[ "$2" ]] ; then
+	col=$2
+else
+	col=1
+fi
+
+awk "{sum+=\$$col} END {print sum}" "$1"

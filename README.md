@@ -5,6 +5,7 @@ Daniel Convissor's Shell Scripts
 * chmodd1 -- chmod all directories in the given path
 * chmodf -- chmod all files in the given directory and it's sub-directories
 * chmodf1 -- chmod all files in the given directory
+* colsum -- adds up a column of numbers in a file
 * datetoepoch -- converts a date string to a UNIX timestamp
 * duh -- Disk Usage Human
 * epochtodate -- converts a UNIX timestamp to a date string
