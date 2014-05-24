@@ -7,7 +7,7 @@ Daniel Convissor's Shell Scripts
 * chmodf1 -- chmod all files in the given directory
 * colsum -- adds up a column of numbers in a file
 * datetoepoch -- converts a date string to a UNIX timestamp
-* duh -- Disk Usage Human
+* duh -- Disk Usage Human makes a size ordered list of dirs in given location
 * epochtodate -- converts a UNIX timestamp to a date string
 * glo -- Git Log Oneline
 * gpw -- Generate PassWord
